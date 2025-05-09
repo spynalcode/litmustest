@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DApp Testing Platform</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    hello world
+  <div class="container">
+    <header>
+      <div class="ltm-logo"> 
+        <div class="litmus-logo"></div>
+        <h1>LitmusTest</h1>
+      </div>
+      <nav>
+        <button id="browseBtn">Browse DApps</button>
+        <button id="dashboardBtn">My Dashboard</button>
+      </nav>
+    </header>
+    
+    <main>
+      <div id="browseView" class="view">
+        <h2>Available DApps</h2>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search DApps...">
+          <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="DeFi">DeFi</option>
+            <option value="NFT">NFT</option>
+            <option value="Game">Game</option>
+            <option value="Tool">Tool</option>
+            <option value="L1 blockchain">L1 blockchain</option>
+            <option value="L2 blockchain">L2 blockchain</option>
+          </select>
+        </div>
+        <div id="dappsGrid" class="grid-container"></div>
+      </div>
+      
+      <div id="dashboardView" class="view hidden">
+        <h2>My Dashboard</h2>
+        <div id="dashboardContent" class="grid-container"></div>
+      </div>
+    </main>
+  </div>
+  
+  <script src="dappsData.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
+

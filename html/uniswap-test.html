@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing Uniswap</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    iframe {
+      width: 100%;
+      height: 800px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    .controls {
+      margin-bottom: 20px;
+      padding: 15px;
+      background: #f5f5f5;
+      border-radius: 8px;
+    }
+    select, button {
+      padding: 8px 12px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Testing Uniswap</h1>
+    
+    <div class="controls">
+      <select id="networkSelector">
+        <option value="ethereum">Ethereum Testnet</option>
+        <option value="polygon">Polygon Testnet</option>
+      </select>
+      <button id="connectWallet">Connect Wallet</button>
+      <button id="refreshBtn">Refresh</button>
+    </div>
+    
+    <iframe id="dappFrame" src="https://app.uniswap.org/" frameborder="0"></iframe>
+  </div>
+
+  <script>
+    document.getElementById('networkSelector').addEventListener('change', function() {
+      const network = this.value;
+      let url;
+      
+      switch(network) {
+        case 'ethereum':
+          url = 'https://app.uniswap.org/';
+          break;
+        case 'polygon':
+          url = 'https://uniswap-v3.matic.network/';
+          break;
+        default:
+          url = 'https://app.uniswap.org/';
+      }
+      
+      document.getElementById('dappFrame').src = url;
+    });
+    
+    document.getElementById('refreshBtn').addEventListener('click', function() {
+      const iframe = document.getElementById('dappFrame');
+      iframe.src = iframe.src;
+    });
+    
+    // This would be enhanced with actual wallet connection logic
+    document.getElementById('connectWallet').addEventListener('click', function() {
+      alert('Wallet connection would be implemented here');
+    });
+  </script>
+</body>
+</html>
