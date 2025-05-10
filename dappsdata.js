@@ -1,5 +1,5 @@
 // dappsData.js
-const dappsData = {
+export const dappsData = {
     "monad": {
       name: "Monad",
       logo: "logo/monadlogo.jpg",
