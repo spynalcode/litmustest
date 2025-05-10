@@ -1,6 +1,5 @@
 // app.js
 
-import { dappsData } from "./dappsdata";
 document.addEventListener('DOMContentLoaded', function() {
     // DOM Elements
     const browseView = document.getElementById('browseView');
