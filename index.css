@@ -14,6 +14,20 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
+  /* Mobile-specific styles */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    gap: 16px; /* Adds space between buttons */
+    padding: 8px 0; /* Adds vertical padding */
+  }
+
+  nav button {
+    margin-left: 0; /* Remove default left margin */
+    flex: 1; /* Makes buttons take equal space */
+    min-width: 120px; /* Ensures buttons don't get too small */
+  }
+}
   }
   .container {
     max-width: 1200px;
