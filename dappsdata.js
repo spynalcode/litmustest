@@ -60,7 +60,7 @@ const dappsData = {
     },
        "Oglabs": {
         name: "Oglabs",
-        logo: "logo/Oglabs.jpg",
+        logo: "logo/Oglab.jpg",
         category: "L1 Blockchain",
         description: "The largest DeAI L1 ecosystem",
         fundsRaised: "$107M",
