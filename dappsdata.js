@@ -27,6 +27,37 @@ const dappsData = {
         htmlFile: "https://testnet.somnia.network/",
         addedToDashboard: false
     },
+
+    "Pharos": {
+        name: "Pharos",
+        logo: "logo/pharos.jpg",
+        category: "L1 blockchain",
+        description: "High-performance EVM Layer 1 for RWA. Scalable, modular & institutional-grade.",
+        fundsRaised: "$8M",
+        htmlFile: "https://x.com/CryptoHindiO/status/1923301213338062901",
+        addedToDashboard: false
+    },
+
+     "SaharaAI": {
+        name: "SaharaAI",
+        logo: "logo/SaharaAI.jpg",
+        category: "AI",
+        description: "Full-stack, AI native blockchain platform to accelerate an AI-driven future.",
+        fundsRaised: "$49M",
+        htmlFile: "https://x.com/CryptoHindiO/status/1924808013891961075",
+        addedToDashboard: false
+    },
+
+    "linera": {
+        name: "linera",
+        logo: "logo/linera.jpg",
+        category: "L1 Blockchain",
+        description: "Linera is the first L1 blockchain optimized for hyper-connected, real-time applications",
+        fundsRaised: "$12M",
+        htmlFile: "https://x.com/CryptoHindiO/status/1922148371923399060",
+        addedToDashboard: false
+    
+    },
     
         "Megaeth": {
         name: "MegaEth",
@@ -36,6 +67,21 @@ const dappsData = {
         fundsRaised: "$57M",
         htmlFile: "https://x.com/xcryptopunk/status/1916170076572815721",
         addedToDashboard: false
-    // Add more DApps here...
+    
+    },
+
+        "Magic Newton": {
+        name: "Magic Newton",
+        logo: "logo/magicnewton.jpg",
+        category: "AI",
+        description: "Simpler crypto UX with verifiable AI agents.",
+        fundsRaised: "$--M",
+        htmlFile: "",
+        addedToDashboard: false
+    
     }
+
+    
+
+    // Add more DApps here...
 }
